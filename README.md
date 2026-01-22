@@ -20,4 +20,4 @@ It allows users to perform simple arithmetic operations such as addition, subtra
 - Responsive layout using CSS Grid  
 
 ## Live Preview
-🔗 https://aayushi-1505.github.io/CODSOFT/task3-calculator/
+🔗 https://aayushi-1505.github.io/codsoft_task1/
