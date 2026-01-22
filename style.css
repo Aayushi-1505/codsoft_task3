@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: #111;
+    padding: 25px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.calculator h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.calculator {
+    width: 320px;
+    margin: 80px auto;
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;        
+    text-align: right;
+    padding: 10px;
+}
+#display:focus {
+    outline: none;
+}
+#display {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 12px;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: right;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+button {
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.7);
+    background: linear-gradient(145deg, #3a3a3a, #222);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8) {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+}
+
+.equal {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    grid-row: span 2;
+}
+
+.equal:hover {
+    box-shadow: 0 12px 28px rgba(0, 114, 255, 0.7);
+}
+
+.zero {
+    grid-column: span 2;
+}
